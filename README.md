@@ -1,9 +1,11 @@
 ### Bot-Discord
 That is a french repository
+<br>
 C'est un dépot francais
 
 # config.json
 C'est le fichier de configuration principale, la syntaxe est :
+<br>
 <code>
 {
   "token": "Votre token"
@@ -12,6 +14,7 @@ C'est le fichier de configuration principale, la syntaxe est :
 
 # data_base.json
 C'est le seul fichier de base de donner, la syntaxe est :
+<br>
 <code>
 {
     "warn": {
