@@ -1,8 +1,9 @@
-### Bot-Discord
+# Bot-Discord
 That is a french repository
 <br>
 C'est un dépot francais
-
+<br><br>
+## MultiBot
 # config.json
 C'est le fichier de configuration principale, la syntaxe est :
 <br>
@@ -28,3 +29,7 @@ C'est le seul fichier de base de donner, la syntaxe est :
 
 # index.js
 C'est le fichier principale ou le code est ecrie.
+<br><br>
+##EconomyBot
+<br><br>
+##AreaBot
