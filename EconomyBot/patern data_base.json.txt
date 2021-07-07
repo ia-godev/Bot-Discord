@@ -1,0 +1,15 @@
+{
+  "server": {
+    "serverId": {
+      "memberId": {
+        "coins": 30,
+        "levels": 1,
+        "nbGame": {
+          "total": 10,
+          "loto": 5,
+          "rouletterusse": 5
+        }        
+      }
+    }
+  }
+}

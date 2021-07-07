@@ -17,29 +17,21 @@ client.on("guildMemberAdd", member => {
 client.on('message', message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 	let args = message.content.slice(prefix.length).trim().split(' ');
-  console.log(prefix);
-  console.log(args);
 	const command = args.shift().toLowerCase();
-  console.log(command);
 
-  if (command === "gg") {
-    return message.channel.send("***Test !***");
-  } else if (command === "loto") {
-    if (args.length == 0) {
-			return message.channel.send("Vous devez métre les chiffres que vous avez choisis (ex:1234) et les points que vous misez (ex:5) !");
-		} else {
-      args[1] = parseInt(args[0]);
-      if (!isNaN(args[0])) {
-        message.channel.send("Je rentre !");
-        if (args[0].length == 4) {
-          return message.channel.send("Bravo c'est 4 chiffres !");
-        } else {
-          return message.channel.send("Non !");
+  if (command === "clear") {
+    message.delete();
+    if (message.member.hasPermission("MANAGE_MESSAGES")) {
+      if (args[1]) {
+        if (!isNaN(args[1]) && args[1] >= 1 && args[1] <= 99) {
+          message.channel.bulkDelete(args[1]);
+        } else if (args[1] === "*") {
+          message.channel.bulkDelete(99);
         }
-      } else {
-        return message.channel.send("is NaN !");
       }
     }
+  } else if (command === "claer") {
+    message.channel.bulkDelete(99);
   }
 });
 
